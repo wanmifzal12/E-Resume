@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your eResume</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #E3F2FD; 
+            color: #333;
+        }
+
+        header {
+            background-color: #1976D2; 
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3949AB; 
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('path/to/image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1976D2; 
+            border-bottom: 2px solid #1976D2;
+            padding-bottom: 10px;
+            font-size: 24px; 
+        }
+
+        p {
+            color: black; 
+            font-size: 20px; 
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            text-align: left; 
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-list li {
+            margin: 10px;
+            padding: 15px;
+            background-color: #66a3ff; 
+            color: black;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 20px;
+            background-color: #3949AB; 
+            color: #ffffff;
+        }
+
+        .application-info {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .application-info p {
+            margin-bottom: 10px;
+        }
+
+        .form-container {
+            text-align: left; 
+            margin-top: 20px;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .form-group {
+            display: grid;
+            gap: 5px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: black;
+        }
+
+        .profile-picture {
+            max-width: 20%;
+            height: auto;
+            border-radius: 50%; 
+            margin-bottom: 20px;
+        }
+
+        .copyright-info {
+            text-align: center;
+            padding: 10px;
+            background-color: #3949AB; 
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My eResume</h1>
+    </header>
+
+    <nav>
+        <a href="#" style="font-size: larger;">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <img src="picture/m.png" alt="m logo" class="profile-picture">
+        <h2>MAYDEKA URTAS</h2>
+        <p class="info"> I am excited about the prospect of contributing my skills to a dynamic data analysis position. My proficiency in data-related technologies and my passion for extracting meaningful insights make me a strong candidate for your team.</p>
+
+        <div class="form-container">
+            <h2>Contact Me</h2>
+            <form>
+                <p>Let's connect and explore how my analytical skills can benefit your organization!</p>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <p style="color: white;">Phone Number: +601129380870 | Email: maydekau@gmail.com</p>
+    </div>
+
+</body>
+
+</html>
+

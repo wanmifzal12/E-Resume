@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYDEKA URTAS - Data Analyst e-Resume</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+            background-color: #f0f5ff; 
+            color: #002147; 
+        }
+
+        nav {
+            background-color: #002147; 
+            padding: 10px;
+            text-align: right; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #66a3ff; 
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #003366; 
+        }
+
+        header {
+            text-align: center;
+            background-color: #66a3ff; 
+            color: #fff; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header img.profile-picture {
+            max-width: 200px; 
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .name-column {
+            text-align: center;
+        }
+
+        .introduction {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        section {
+            text-align: center; 
+            margin-top: 20px; 
+        }
+
+        select {
+            padding: 10px 20px;
+            margin: 10px;
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px; 
+            padding: 20px;
+            background-color: #3949AB; 
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="picture/b.jpg" alt="m logo" class="profile-picture">
+        <div class="name-column">
+            <h1>MAYDEKA URTAS</h1>
+            <p style="font-size: larger;">Data Analyst e-Resume</p>
+        </div>
+    </header>
+
+    <div class="introduction">
+        <p style="font-size: larger;">Welcome to my Data Analyst e-Resume! Explore my background, achievements, skills, and feel free to contact me.</p>
+    </div>
+     
+    <section>
+        <select id="resumeOptions" style="background-color: black; color: white;" onchange="handleSelection()">
+            <option selected disabled>Choose an Option Below</option>
+            <option value="picture/MAYDEKA URTAS (2323127099) RESUME VIDEO.mp4">View Video</option>
+        </select>
+    </section>
+
+    <div class="contact-info">
+        <p style="font-size: larger;">2023. MaydekaUrtas. All rights reversed</p>
+    </div>
+
+    <script>
+        function handleSelection() {
+            var selectBox = document.getElementById("resumeOptions");
+            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+
+            if (selectedValue) {
+                // Redirect to the selected URL or trigger download
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

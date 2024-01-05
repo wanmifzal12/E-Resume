@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your eResume</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #E3F2FD; 
+            color: #333;
+        }
+
+        header {
+            background-color: #1976D2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3949AB; 
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('path/to/image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-picture {
+            max-width: 20%;
+            height: auto;
+            border-radius: 50%; 
+            margin-bottom: 20px;
+        }
+
+        .name-column {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #1976D2; 
+            border-bottom: 2px solid #1976D2;
+            padding-bottom: 10px;
+        }
+
+        .achievements {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: -10px; 
+        }
+
+        .achievement-item {
+            width: 100%;
+            background-color: #66a3ff; 
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+
+        .progress-bar {
+            background-color: #1976D2; 
+            height: 8px;
+            border-radius: 4px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .progress-value {
+            background-color: #4caf50; 
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 90%; 
+            font-size: 24px;
+            color: black; 
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 20px;
+            background-color: #3949AB; 
+            color: #ffffff;
+        }
+
+        .copyright-info {
+            text-align: center;
+            padding: 10px;
+            background-color: #3949AB; 
+            color: white; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My eResume</h1>
+    </header>
+
+    <nav>
+        <a href="#" style="font-size: larger;">Achievements</a>
+    </nav>
+
+    <div class="hero">
+        <img src="picture/m.png" alt="m logo" class="profile-picture">
+        <div class="name-column">
+            <h2>MAYDEKA URTAS</h2>
+        </div>
+        <div class="achievements">
+            <div class="achievement-item">
+                <p style="font-size: larger;">My hands-on experience in data analysis is highlighted through a project where I applied statistical models to predict consumer behavior based on online shopping patterns. This not only honed my analytical skills but showcased my ability to translate theoretical knowledge into practical solutions.</p>
+                <div class="progress-bar">
+                    <div class="progress-value"></div>
+                </div>
+                <span class="arrow">&#8595;</span>
+            </div>
+            <div class="achievement-item">
+                <p style="font-size: larger;">During my internship at previous training field company , I streamlined data collection processes, resulting in a 20% reduction in processing time. This achievement was recognized by peers and supervisors, emphasizing my dedication to optimizing workflows.</p>
+                <div class="progress-bar">
+                    <div class="progress-value"></div>
+                </div>
+                <span class="arrow">&#8595;</span>
+            </div>
+            <div class="achievement-item">
+                <p style="font-size: larger;">As the president of the Data Science Club at University Technology MARA (UITM) Kampus Puncak Perdana, I led the organization in hosting a successful data science hackathon, showcasing my leadership abilities and organizational skills.</p>
+                <div class="progress-bar">
+                    <div class="progress-value"></div>
+                </div>
+                <span class="arrow">&#8595;</span>
+            </div>
+            </div>
+            <div class="achievement-item">
+                <p style="font-size: larger;">Complementing my academic journey is a certification in Data Analytics from Bachelor's degree in Information System Management from Universtity Technology MARA (UITM) Kampus Puncak Prdana. Coupled with my proficiency in languages like Python and SQL, I am well-equipped to tackle real-world data challenges.</p>
+                <div class="progress-bar">
+                   <div class="progress-value"></div>
+        </div>
+        </div>
+    </div>
+
+    <div class="copyright-info">
+        <p style="color: white; font-size: larger;">2023. Maydeka Urtas. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>
+
